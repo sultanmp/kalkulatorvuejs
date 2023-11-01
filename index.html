@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Belajar VueJS</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <input v-model="angka1" type="number" />
+      <input v-model="angka2" type="number" />
+      <br />
+      <button @click="hasil = angka1 + angka2">+</button>
+      <button @click="hasil = angka1 - angka2">-</button>
+      <button @click="hasil = angka1 * angka2">×</button>
+      <button @click="hasil = angka1 / angka2">÷</button>
+      <br />
+      {{ hasil }}
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
